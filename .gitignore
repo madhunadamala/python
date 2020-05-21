@@ -136,3 +136,5 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+core-python-getting-started-resources/.DS_Store
+core-python-getting-started-resources/m02/.DS_Store
