@@ -2,18 +2,23 @@
 
 
 class Flight:
+    """A flight with a particular passenger aircraft. """
 
-    def __init__(self, number):
+    def __init__(self, number, aircraft):
         if not number[:2].isalpha():
             raise ValueError(f"No airline code in '{number}'")
 
         if not number[:-2].isupper():
             raise ValueError(f"Invalid airline code '{number}'")
 
-        if not (number[:2].isdigit() and int(number[2:]) <= 9999):
+        if not (number[2:].isdigit() and int(number[2:]) <= 9999):
              raise ValueError(f"Invalid route number '{number}'")
 
         self._number = number
+        self._aircraft = aircraft
+
+    def aircraft_model(self):
+        return self._aircraft.model()
 
     def number(self):
         return self._number
@@ -41,14 +46,6 @@ class Aircraft:
 
 
 ####Usage#####
-a= Aircraft("G-EUPT", "Airbus A319", num_rows = 22, num_seats_per_row = 6)
-print(a.model())
-print(a.seatin_plan())
+f= Flight("BA758", Aircraft("G-EUPT", "Airbus A319", num_rows = 22, num_seats_per_row = 6))
+print(f.aircraft_model())
 
-
-
-
-
-
-#f = Flight("SN12345")
-#f.number()
