@@ -21,3 +21,9 @@ motorcycles = ['honda','yamaha','suzuki']
 
 motorcycles.insert(0,'ducati')
 print(motorcycles)
+
+# Removing an item using the DEL Statement
+motorcycles = ['honda','yamaha','suzuki']
+print(motorcycles)
+del motorcycles[0]
+print (motorcycles)
