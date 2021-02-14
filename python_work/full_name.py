@@ -1,4 +1,5 @@
 first_name="Madhusudhana"
 last_name="Nadamala"
-fullname=f"{first_name.upper()} {last_name.lower()} Reddy"
+middle_name="Reddy"
+fullname=f" {last_name.upper()} {first_name.title()} {middle_name.lower()}"
 print(fullname)
