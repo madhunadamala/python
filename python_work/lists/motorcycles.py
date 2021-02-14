@@ -30,7 +30,7 @@ print(motorcycles)
 print("\nRemoving an item using the DEL Statement")
 motorcycles = ['honda','yamaha','suzuki']
 print(motorcycles)
-del motorcycles[0]
+del motorcycles[1]
 print (motorcycles)
 
 # Removing an item using the POP Statement
@@ -68,4 +68,3 @@ too_expensive = 'ducati'
 motorcycles.remove(too_expensive)
 print (motorcycles)
 print(f"\nA {too_expensive.title()} is too expensive for me.")
-
