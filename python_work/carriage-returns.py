@@ -1,0 +1,5 @@
+message = ("Languages:\nPython\nC\nJavaScript")
+print (message)
+print("Below line will be printed with Tab")
+message = ("\tMadhu")
+print(message)
