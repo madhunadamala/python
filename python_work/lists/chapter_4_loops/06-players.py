@@ -14,3 +14,7 @@ print(players[-3:])
 
 # Third item to skip the items in the range (1 Default)
 print(players[:4:2])
+
+# Looping Through Slice Page 62 in Book
+for player in players[:3]:
+    print(player.title())
